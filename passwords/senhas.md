@@ -1,3 +1,0 @@
-#RumoAoPróximoNível
-#Protagonistas
-#ImaginarConstruirTransformar
