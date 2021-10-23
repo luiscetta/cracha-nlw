@@ -26,6 +26,8 @@ body {
   margin-top: .8rem;
   height: .5rem;
   width: 5rem;
+  border: none;
+
   background-color: #202024;
 }
 
@@ -33,7 +35,7 @@ body {
   margin: auto;
   position: absolute;
   width: 4.06rem;
-  height: 4.5rem;
+  height: 4.4rem;
   top: 0px;
   border: none;
   
