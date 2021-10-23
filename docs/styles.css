@@ -68,7 +68,8 @@ main {
   position: relative;
 }
 
-.avatar span {
+span > img {
+  width: 4.5rem;
   position: absolute;
   top: -15px;
   z-index: 1;
