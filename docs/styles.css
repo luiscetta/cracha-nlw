@@ -21,12 +21,33 @@ body {
   place-items: center;
 }
 
+.hole {
+  margin: auto;
+  margin-top: .8rem;
+  height: .5rem;
+  width: 5rem;
+  background-color: #202024;
+}
+
+.ticket {
+  margin: auto;
+  position: absolute;
+  width: 4.06rem;
+  height: 4.5rem;
+  top: 0px;
+  border: none;
+  
+  background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
+}
+
 main {
-  background: url("./images/background.svg");
-  width: 375px;
-  height: 812px;
+  background: url("./images/background.svg") no-repeat center/cover;
+  background-size: cover;
+  width: 22.37rem;
+  height: 34.22rem;
 
   box-shadow: 0 0 .75rem .35rem rgba(136, 135, 135, 0.226);
+  border-radius: .5rem;
 }
 
 .container {
@@ -38,8 +59,9 @@ main {
 }
 
 .avatar {
+  margin: auto;
   width: 10rem;
-  margin: 11.5rem auto 0;
+  margin-top: 22.9%;
 
   position: relative;
 }
@@ -62,7 +84,7 @@ main {
 h1 {
   font-size: 1.5rem;
   
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 a {
@@ -74,12 +96,16 @@ a {
   justify-content: center;
 }
 
+span {
+  margin: .8rem 0;
+}
+
 p {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 ul {
-  margin-top: 5rem;
+  margin-top: 2rem;
 
   list-style: none;
   padding: 0;
@@ -99,3 +125,5 @@ li:hover {
   border-left: solid .1rem #f93a65;
   border-radius: .5rem;
 }
+
+
