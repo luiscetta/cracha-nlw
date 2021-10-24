@@ -13,7 +13,7 @@ body {
   --grey: hsl(240, 9%, 89%);
   --black: hsl(240, 6%, 13%);
 
-  background: radial-gradient(#252525, #000000);
+  background: radial-gradient(#623ea5, #000000);
 }
 
 body {
@@ -107,6 +107,23 @@ p {
   margin-top: 1rem;
 }
 
+p::after {
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: blink .7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+
+  50% {
+      opacity: 0;
+  }
+}
+
 ul {
   margin-top: 2rem;
 
@@ -130,3 +147,35 @@ li:hover {
 }
 
 
+/* @media_________________________________________________________  */
+
+@media screen and (max-width: 428px) {
+  .ticket, .hole {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .avatar {
+    margin-top: 51%;
+  }
+
+  li {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .avatar {
+    margin-top: 30%;
+  }
+
+  li {
+    margin-top: 1rem;
+  }
+}

@@ -33,7 +33,7 @@ function getGithubProfileInfos() {
         // o data armazena o res já em JSON dentro dela.
         .then(data => { 
             userName.textContent = data.name;
-            userBio.textContent = data.bio;
+            // userBio.textContent = data.bio;
             userProfile.href = data.html_url;
             userImage.src = data.avatar_url;
             userLogin.textContent = data.login;
@@ -41,3 +41,14 @@ function getGithubProfileInfos() {
 }
 
 getGithubProfileInfos();
+
+function typeWriter(element) {
+    const textArray = element.innerHTML.split("");
+    element.innerHTML = '';
+    textArray.forEach((letter, i) => {
+       setTimeout(() => element.innerHTML += letter, 75 * i);
+    });
+};
+
+const title = document.querySelector('p');
+typeWriter(title);
