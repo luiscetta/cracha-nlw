@@ -1,9 +1,9 @@
 const linksSocialMedia = {
     github: "luiscetta",
-    youtube: "channel/UChCUlC4pzV0B439bECe_IjA",
-    facebook: "luiscetta",
-    instagram: "cetta_lojinha",
-    twitter: "_cettou",
+    'linkedin.com': "in/luiscetta/",
+    'facebook.com': "luiscetta",
+    'luiscetta.github.io': "Portfolio",
+    'twitter.com': "_cettou",
 };
 
 function changeSocialMediaLinks() {
@@ -15,7 +15,7 @@ function changeSocialMediaLinks() {
         // pegando o atributo class da tag li.
         const social = li.getAttribute('class');
 
-        li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`;
+        li.children[0].href = `https://${social}/${linksSocialMedia[social]}`;
     };
 }
 
